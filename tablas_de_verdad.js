@@ -1,18 +1,21 @@
-let a1 = true;
-let b1 = true;
-let a2 = true;
-let b2 = false;
-let a3 = false;
-let b3 = true;
-let a4 = false;
-let b4 = false;
+// Tabla de verdad para el operador AND
+console.log("Tabla de verdad para AND:");
+console.log("A\tB\tA AND B");
+console.log("false\tfalse\t" + (false && false));
+console.log("false\ttrue\t" + (false && true));
+console.log("true\tfalse\t" + (true && false));
+console.log("true\ttrue\t" + (true && true));
 
-let c1 = a1 && b1;
-let c2 = a2 && b2;
-let c3 = a3 && b3;
-let c4 = a4 || b4;
+// Tabla de verdad para el operador OR
+console.log("\nTabla de verdad para OR:");
+console.log("A\tB\tA OR B");
+console.log("false\tfalse\t" + (false || false));
+console.log("false\ttrue\t" + (false || true));
+console.log("true\tfalse\t" + (true || false));
+console.log("true\ttrue\t" + (true || true));
 
-console.log(a1 + " | " + b1 + " = " + c1);
-console.log(a2 + " | " + b2 + " = " + c2);
-console.log(a3 + " | " + b3 + " = " + c3);
-console.log(a4 + " | " + b4 + " = " + c4);
+// Tabla de verdad para el operador NOT
+console.log("\nTabla de verdad para NOT:");
+console.log("A\tNOT A");
+console.log("false\t" + (!false));
+console.log("true\t" + (!true));
